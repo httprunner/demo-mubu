@@ -1,0 +1,632 @@
+{
+    "config": {
+        "name": "testcase description",
+        "variables": {}
+    },
+    "teststeps": [
+        {
+            "name": "/",
+            "request": {
+                "url": "https://mubu.com/",
+                "method": "GET",
+                "headers": {
+                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/login",
+            "request": {
+                "url": "https://mubu.com/login",
+                "method": "GET",
+                "headers": {
+                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/api/login/submit",
+            "request": {
+                "url": "https://mubu.com/api/login/submit",
+                "method": "POST",
+                "headers": {
+                    "x-requested-with": "XMLHttpRequest",
+                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36",
+                    "content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+                },
+                "data": {
+                    "phone": "18613143458",
+                    "password": "==REMOVED==",
+                    "remember": "true"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.code",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.msg",
+                        null
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/list",
+            "request": {
+                "url": "https://mubu.com/list",
+                "method": "GET",
+                "headers": {
+                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/api/list/tip_new_update",
+            "request": {
+                "url": "https://mubu.com/api/list/tip_new_update",
+                "method": "POST",
+                "headers": {
+                    "x-requested-with": "XMLHttpRequest",
+                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+                },
+                "data": ""
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.code",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.msg",
+                        null
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/api/list/get",
+            "request": {
+                "url": "https://mubu.com/api/list/get",
+                "method": "POST",
+                "headers": {
+                    "x-requested-with": "XMLHttpRequest",
+                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36",
+                    "content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+                },
+                "data": {
+                    "folderId": "0",
+                    "sort": "name",
+                    "keywords": "",
+                    "source": ""
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.code",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.msg",
+                        null
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/api/message/get_message_unread",
+            "request": {
+                "url": "https://mubu.com/api/message/get_message_unread",
+                "method": "POST",
+                "headers": {
+                    "x-requested-with": "XMLHttpRequest",
+                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+                },
+                "data": ""
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.code",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.msg",
+                        null
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/api/list/create_doc",
+            "request": {
+                "url": "https://mubu.com/api/list/create_doc",
+                "method": "POST",
+                "headers": {
+                    "x-requested-with": "XMLHttpRequest",
+                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36",
+                    "content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+                },
+                "data": {
+                    "folderId": "0",
+                    "type": "0"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.code",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.msg",
+                        null
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/docnrp7hVc0Lc",
+            "request": {
+                "url": "https://mubu.com/docnrp7hVc0Lc",
+                "method": "GET",
+                "headers": {
+                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/api/document/get",
+            "request": {
+                "url": "https://mubu.com/api/document/get",
+                "method": "POST",
+                "headers": {
+                    "x-requested-with": "XMLHttpRequest",
+                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36",
+                    "content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+                },
+                "data": {
+                    "docId": "nrp7hVc0Lc"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.code",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.msg",
+                        "Success"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/api/user/current_level",
+            "request": {
+                "url": "https://mubu.com/api/user/current_level",
+                "params": {
+                    "document_id": "nrp7hVc0Lc"
+                },
+                "method": "POST",
+                "headers": {
+                    "x-requested-with": "XMLHttpRequest",
+                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+                },
+                "data": ""
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.code",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.msg",
+                        "Success"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/api/ticket/register",
+            "request": {
+                "url": "https://mubu.com/api/ticket/register",
+                "method": "GET",
+                "headers": {
+                    "x-requested-with": "XMLHttpRequest",
+                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.code",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.msg",
+                        "Success"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/api/middleware/members",
+            "request": {
+                "url": "https://mubu.com/api/middleware/members",
+                "params": {
+                    "memberId": "322040",
+                    "documentId": "nrp7hVc0Lc"
+                },
+                "method": "GET",
+                "headers": {
+                    "x-requested-with": "XMLHttpRequest",
+                    "request-id": "members:322040:1561345233846",
+                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.code",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.msg",
+                        "success"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/api/middleware/message",
+            "request": {
+                "url": "https://mubu.com/api/middleware/message",
+                "method": "POST",
+                "headers": {
+                    "member-id": "322040",
+                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36",
+                    "content-type": "application/json; charset=UTF-8",
+                    "x-requested-with": "XMLHttpRequest",
+                    "request-id": "MESSAGE:1449164:322040:3"
+                },
+                "json": {
+                    "engineType": "MUBU",
+                    "messageType": "BROADCAST",
+                    "reqId": 3,
+                    "requestId": "MESSAGE:1449164:322040:3",
+                    "token": "nrp7hVc0Lc",
+                    "data": {
+                        "message": {
+                            "type": "CHANGE",
+                            "documentId": "nrp7hVc0Lc",
+                            "version": 0,
+                            "content": [
+                                {
+                                    "name": "nameChanged",
+                                    "title": "d"
+                                }
+                            ]
+                        }
+                    },
+                    "context": {
+                        "os": "macOS",
+                        "osVersion": "10.14.1",
+                        "appVersion": "0",
+                        "platform": "web"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.code",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.msg",
+                        "success"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/api/middleware/message",
+            "request": {
+                "url": "https://mubu.com/api/middleware/message",
+                "method": "POST",
+                "headers": {
+                    "member-id": "322040",
+                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36",
+                    "content-type": "application/json; charset=UTF-8",
+                    "x-requested-with": "XMLHttpRequest",
+                    "request-id": "MESSAGE:1449164:322040:5"
+                },
+                "json": {
+                    "engineType": "MUBU",
+                    "messageType": "BROADCAST",
+                    "reqId": 5,
+                    "requestId": "MESSAGE:1449164:322040:5",
+                    "token": "nrp7hVc0Lc",
+                    "data": {
+                        "message": {
+                            "type": "CHANGE",
+                            "documentId": "nrp7hVc0Lc",
+                            "version": 1,
+                            "content": [
+                                {
+                                    "name": "nameChanged",
+                                    "title": "de"
+                                }
+                            ]
+                        }
+                    },
+                    "context": {
+                        "os": "macOS",
+                        "osVersion": "10.14.1",
+                        "appVersion": "0",
+                        "platform": "web"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.code",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.msg",
+                        "success"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/api/middleware/message",
+            "request": {
+                "url": "https://mubu.com/api/middleware/message",
+                "method": "POST",
+                "headers": {
+                    "member-id": "322040",
+                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36",
+                    "content-type": "application/json; charset=UTF-8",
+                    "x-requested-with": "XMLHttpRequest",
+                    "request-id": "MESSAGE:1449164:322040:6"
+                },
+                "json": {
+                    "engineType": "MUBU",
+                    "messageType": "BROADCAST",
+                    "reqId": 6,
+                    "requestId": "MESSAGE:1449164:322040:6",
+                    "token": "nrp7hVc0Lc",
+                    "data": {
+                        "message": {
+                            "type": "CHANGE",
+                            "documentId": "nrp7hVc0Lc",
+                            "version": 2,
+                            "content": [
+                                {
+                                    "name": "nameChanged",
+                                    "title": "dem"
+                                }
+                            ]
+                        }
+                    },
+                    "context": {
+                        "os": "macOS",
+                        "osVersion": "10.14.1",
+                        "appVersion": "0",
+                        "platform": "web"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.code",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.msg",
+                        "success"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/api/middleware/message",
+            "request": {
+                "url": "https://mubu.com/api/middleware/message",
+                "method": "POST",
+                "headers": {
+                    "member-id": "322040",
+                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36",
+                    "content-type": "application/json; charset=UTF-8",
+                    "x-requested-with": "XMLHttpRequest",
+                    "request-id": "MESSAGE:1449164:322040:8"
+                },
+                "json": {
+                    "engineType": "MUBU",
+                    "messageType": "BROADCAST",
+                    "reqId": 8,
+                    "requestId": "MESSAGE:1449164:322040:8",
+                    "token": "nrp7hVc0Lc",
+                    "data": {
+                        "message": {
+                            "type": "CHANGE",
+                            "documentId": "nrp7hVc0Lc",
+                            "version": 3,
+                            "content": [
+                                {
+                                    "name": "nameChanged",
+                                    "title": "demo"
+                                }
+                            ]
+                        }
+                    },
+                    "context": {
+                        "os": "macOS",
+                        "osVersion": "10.14.1",
+                        "appVersion": "0",
+                        "platform": "web"
+                    }
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.code",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.msg",
+                        "success"
+                    ]
+                }
+            ]
+        }
+    ]
+}
