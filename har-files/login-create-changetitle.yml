@@ -142,13 +142,13 @@ teststeps:
     -   eq:
         - content.msg
         - null
--   name: /docnrp7hVc0Lc
+-   name: /doc9SqraR7vFc
     request:
         headers:
             user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36
                 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
         method: GET
-        url: https://mubu.com/docnrp7hVc0Lc
+        url: https://mubu.com/doc9SqraR7vFc
     validate:
     -   eq:
         - status_code
@@ -156,7 +156,7 @@ teststeps:
 -   name: /api/document/get
     request:
         data:
-            docId: nrp7hVc0Lc
+            docId: 9SqraR7vFc
         headers:
             content-type: application/x-www-form-urlencoded; charset=UTF-8
             user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36
@@ -183,7 +183,7 @@ teststeps:
             x-requested-with: XMLHttpRequest
         method: POST
         params:
-            document_id: nrp7hVc0Lc
+            document_id: 9SqraR7vFc
         url: https://mubu.com/api/user/current_level
     validate:
     -   eq:
@@ -222,7 +222,7 @@ teststeps:
             x-requested-with: XMLHttpRequest
         method: GET
         params:
-            documentId: nrp7hVc0Lc
+            documentId: 9SqraR7vFc
             memberId: '322040'
         url: https://mubu.com/api/middleware/members
     validate:
@@ -255,14 +255,14 @@ teststeps:
                     content:
                     -   name: nameChanged
                         title: d
-                    documentId: nrp7hVc0Lc
+                    documentId: 9SqraR7vFc
                     type: CHANGE
                     version: 0
             engineType: MUBU
             messageType: BROADCAST
             reqId: 3
             requestId: MESSAGE:1449164:322040:3
-            token: nrp7hVc0Lc
+            token: 9SqraR7vFc
         method: POST
         url: https://mubu.com/api/middleware/message
     validate:
@@ -295,14 +295,14 @@ teststeps:
                     content:
                     -   name: nameChanged
                         title: de
-                    documentId: nrp7hVc0Lc
+                    documentId: 9SqraR7vFc
                     type: CHANGE
                     version: 1
             engineType: MUBU
             messageType: BROADCAST
             reqId: 5
             requestId: MESSAGE:1449164:322040:5
-            token: nrp7hVc0Lc
+            token: 9SqraR7vFc
         method: POST
         url: https://mubu.com/api/middleware/message
     validate:
@@ -335,14 +335,14 @@ teststeps:
                     content:
                     -   name: nameChanged
                         title: dem
-                    documentId: nrp7hVc0Lc
+                    documentId: 9SqraR7vFc
                     type: CHANGE
                     version: 2
             engineType: MUBU
             messageType: BROADCAST
             reqId: 6
             requestId: MESSAGE:1449164:322040:6
-            token: nrp7hVc0Lc
+            token: 9SqraR7vFc
         method: POST
         url: https://mubu.com/api/middleware/message
     validate:
@@ -375,14 +375,14 @@ teststeps:
                     content:
                     -   name: nameChanged
                         title: demo
-                    documentId: nrp7hVc0Lc
+                    documentId: 9SqraR7vFc
                     type: CHANGE
                     version: 3
             engineType: MUBU
             messageType: BROADCAST
             reqId: 8
             requestId: MESSAGE:1449164:322040:8
-            token: nrp7hVc0Lc
+            token: 9SqraR7vFc
         method: POST
         url: https://mubu.com/api/middleware/message
     validate:
