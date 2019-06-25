@@ -1,0 +1,3968 @@
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> - TestReport</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0 auto;
+      width: 960px;
+    }
+    #summary {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    #summary th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    #summary td {
+      background-color: lightblue;
+      text-align: center;
+      padding: 4px 8px;
+    }
+    .details {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    .details th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    .details tr .passed {
+      background-color: lightgreen;
+    }
+    .details tr .failed {
+      background-color: red;
+    }
+    .details tr .unchecked {
+      background-color: gray;
+    }
+    .details td {
+      background-color: lightblue;
+      padding: 5px 12px;
+    }
+    .details .detail {
+      background-color: lightgrey;
+      font-size: smaller;
+      padding: 5px 10px;
+      line-height: 20px;
+      text-align: left;
+    }
+    .details .success {
+      background-color: greenyellow;
+    }
+    .details .error {
+      background-color: red;
+    }
+    .details .failure {
+      background-color: salmon;
+    }
+    .details .skipped {
+      background-color: gray;
+    }
+
+    .button {
+      font-size: 1em;
+      padding: 6px;
+      width: 4em;
+      text-align: center;
+      background-color: #06d85f;
+      border-radius: 20px/50px;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+    }
+    a.button{
+      color: gray;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .button:hover {
+      background: #2cffbd;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+      line-height: 25px;
+    }
+    .overlay:target {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      margin: 70px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      width: 50%;
+      position: relative;
+      transition: all 3s ease-in-out;
+    }
+
+    .popup h2 {
+      margin-top: 0;
+      color: #333;
+      font-family: Tahoma, Arial, sans-serif;
+    }
+    .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+    .popup .close:hover {
+      color: #06d85f;
+    }
+    .popup .content {
+      max-height: 80%;
+      overflow: auto;
+      text-align: left;
+    }
+    .popup .separator {
+      color:royalblue
+    }
+
+    @media screen and (max-width: 700px) {
+      .box {
+        width: 70%;
+      }
+      .popup {
+        width: 70%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Test Report: </h1>
+
+  <h2>Summary</h2>
+  <table id="summary">
+    <tr>
+      <th>START AT</th>
+      <td colspan="4">2019-06-25 20:28:54</td>
+    </tr>
+    <tr>
+      <th>DURATION</th>
+      <td colspan="4">2.087 seconds</td>
+    </tr>
+    <tr>
+      <th>PLATFORM</th>
+      <td>HttpRunner 2.2.1 </td>
+      <td>CPython 3.7.3 </td>
+      <td colspan="2">Darwin-18.2.0-x86_64-i386-64bit</td>
+    </tr>
+    <tr>
+      <th>STAT</th>
+      <th colspan="2">TESTCASES (success/fail)</th>
+      <th colspan="2">TESTSTEPS (success/fail/error/skip)</th>
+    </tr>
+    <tr>
+      <td>total (details) =></td>
+      <td colspan="2">1 (1/0)</td>
+      <td colspan="2">7 (7/0/0/0)</td>
+    </tr>
+  </table>
+
+  <h2>Details</h2>
+
+  
+  
+  <h3>create document</h3>
+  <table id="suite_1" class="details">
+    <tr>
+      <td>TOTAL: 7</td>
+      <td>SUCCESS: 7</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_1_1">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">login mubu</td>
+      <td style="text-align:center;width:6em;">1270.31 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_1_1">log-1</a>
+        <div id="popup_log_1_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://mubu.com/
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>user-agent</strong>: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://mubu.com/
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {'SESSION': 'ZmIxYzM2Y2UtYjQ3My00YTk0LWIxYjctZGVjMTQ3M2ZmODJj', 'data_unique_id': '94019d87-d704-44ee-8575-7ce960d7b7a4'}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Server</strong>: Tengine
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: text/html;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 25 Jun 2019 12:28:55 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Accept-Encoding
+                            </div>
+                            
+                            <div>
+                              <strong>Set-Cookie</strong>: data_unique_id=94019d87-d704-44ee-8575-7ce960d7b7a4; Max-Age=2592000; Expires=Thu, 25-Jul-2019 12:28:55 GMT; Path=/, SESSION=ZmIxYzM2Y2UtYjQ3My00YTk0LWIxYjctZGVjMTQ3M2ZmODJj; Path=/; HttpOnly; SameSite=Lax
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Language</strong>: en-US
+                            </div>
+                            
+                            <div>
+                              <strong>server-timing</strong>: inner; dur=16
+                            </div>
+                            
+                            <div>
+                              <strong>X-TT-TIMESTAMP</strong>: 1561465735.036
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                            <div>
+                              <strong>Via</strong>: cache23.l2nu16-1[24,0], cache5.cn464[66,0]
+                            </div>
+                            
+                            <div>
+                              <strong>Timing-Allow-Origin</strong>: *
+                            </div>
+                            
+                            <div>
+                              <strong>EagleId</strong>: 9dff8bcd15614657349924267e
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            text/html;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>text</th>
+                        <td>
+                          
+                              <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;zh-CN&#34;&gt;
+&lt;head&gt;
+&lt;title&gt;幕布 - 极简大纲笔记 | 一键生成思维导图&lt;/title&gt;
+&lt;meta charset=&#34;utf-8&#34;&gt;
+&lt;meta name=&#34;renderer&#34; content=&#34;webkit&#34;/&gt;
+&lt;meta name=&#34;keywords&#34; content=&#34;幕布,笔记,记事,任务管理,工作计划,效率工具,脑图,思维管理,思维导图,头脑风暴,outline工具&#34;/&gt;
+&lt;meta name=&#34;description&#34; content=&#34;幕布是一款结合了大纲笔记和思维导图的头脑管理工具，帮你用更高效的方式和更清晰的结构来记录笔记、管理任务、制定计划甚至是组织头脑风暴。完整覆盖电脑端和移动端&#34;/&gt;
+&lt;meta name=&#34;viewport&#34;
+content=&#34;width=device-width, viewport-fit=cover, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0&#34;&gt;
+&lt;link rel=&#34;shortcut i ... OMITTED 6962 CHARACTORS ...</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>8638</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>534.1</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>508.804</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+        
+        <a class="button" href="#popup_log_1_1_2">log-2</a>
+        <div id="popup_log_1_1_2" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_1_2">&times;</a>
+
+            <div class="content">
+              <h3>Name: /login</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://mubu.com/login
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>user-agent</strong>: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>Cookie</strong>: SESSION=ZmIxYzM2Y2UtYjQ3My00YTk0LWIxYjctZGVjMTQ3M2ZmODJj; data_unique_id=94019d87-d704-44ee-8575-7ce960d7b7a4
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://mubu.com/login
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Server</strong>: Tengine
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: text/html;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 25 Jun 2019 12:28:55 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Accept-Encoding
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Language</strong>: en-US
+                            </div>
+                            
+                            <div>
+                              <strong>server-timing</strong>: inner; dur=8
+                            </div>
+                            
+                            <div>
+                              <strong>X-TT-TIMESTAMP</strong>: 1561465735.301
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                            <div>
+                              <strong>Via</strong>: cache13.l2nu16-1[21,0], cache5.cn464[80,0]
+                            </div>
+                            
+                            <div>
+                              <strong>Timing-Allow-Origin</strong>: *
+                            </div>
+                            
+                            <div>
+                              <strong>EagleId</strong>: 9dff8bcd15614657352404895e
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            text/html;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>text</th>
+                        <td>
+                          
+                              <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;zh-CN&#34;&gt;
+&lt;head&gt;
+&lt;title&gt;登录幕布&lt;/title&gt;
+&lt;meta charset=&#34;utf-8&#34;&gt;
+&lt;meta name=&#34;renderer&#34; content=&#34;webkit&#34;/&gt;
+&lt;meta name=&#34;viewport&#34;
+content=&#34;width=device-width, viewport-fit=cover, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0&#34;&gt;
+&lt;link rel=&#34;shortcut icon&#34; href=&#34;/favicon.ico&#34;&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;/asset/dep/icomoon/style-ba43dd96a4.css&#34;/&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+@font-face {
+font-family: &#34;SourceSansPro&#34;;
+src: url(&#34;/asset/dep/font/SourceSansPro-Regular.ttf&#34;); ... OMITTED 2116 CHARACTORS ...</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>2730</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>102.31</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>99.48</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+        
+        <a class="button" href="#popup_log_1_1_3">log-3</a>
+        <div id="popup_log_1_1_3" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_1_3">&times;</a>
+
+            <div class="content">
+              <h3>Name: /api/login/submit</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://mubu.com/api/login/submit
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>user-agent</strong>: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>content-type</strong>: application/x-www-form-urlencoded; charset=UTF-8
+                          </div>
+                          
+                          <div>
+                            <strong>x-requested-with</strong>: XMLHttpRequest
+                          </div>
+                          
+                          <div>
+                            <strong>Cookie</strong>: SESSION=ZmIxYzM2Y2UtYjQ3My00YTk0LWIxYjctZGVjMTQ3M2ZmODJj; data_unique_id=94019d87-d704-44ee-8575-7ce960d7b7a4
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 73
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          password=1U%2Aq%2APh8%21NNyFN41X%25reivg3&phone=18613143458&remember=true
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://mubu.com/api/login/submit
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {'user_persistence': '2f056535-282d-4eb3-bfc1-4c00e9d6a8d8'}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Server</strong>: Tengine
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 25 Jun 2019 12:28:55 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Accept-Encoding
+                            </div>
+                            
+                            <div>
+                              <strong>Set-Cookie</strong>: user_persistence=2f056535-282d-4eb3-bfc1-4c00e9d6a8d8; Max-Age=2592000; Expires=Thu, 25-Jul-2019 12:28:55 GMT; Path=/
+                            </div>
+                            
+                            <div>
+                              <strong>server-timing</strong>: inner; dur=52
+                            </div>
+                            
+                            <div>
+                              <strong>X-TT-TIMESTAMP</strong>: 1561465735.418
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                            <div>
+                              <strong>Via</strong>: cache23.l2nu16-1[54,0], cache5.cn464[96,0]
+                            </div>
+                            
+                            <div>
+                              <strong>Timing-Allow-Origin</strong>: *
+                            </div>
+                            
+                            <div>
+                              <strong>EagleId</strong>: 9dff8bcd15614657353445184e
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;code&#39;: 0, &#39;msg&#39;: None, &#39;data&#39;: {&#39;next&#39;: &#39;/list&#39;}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.code
+                      </td>
+                      <td>equals</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.msg
+                      </td>
+                      <td>equals</td>
+                      <td>None</td>
+                      <td>None</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>45</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>238.07</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>234.538</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+        
+        <a class="button" href="#popup_log_1_1_4">log-4</a>
+        <div id="popup_log_1_1_4" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_1_4">&times;</a>
+
+            <div class="content">
+              <h3>Name: /list</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://mubu.com/list
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>user-agent</strong>: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>Cookie</strong>: SESSION=ZmIxYzM2Y2UtYjQ3My00YTk0LWIxYjctZGVjMTQ3M2ZmODJj; data_unique_id=94019d87-d704-44ee-8575-7ce960d7b7a4; user_persistence=2f056535-282d-4eb3-bfc1-4c00e9d6a8d8
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://mubu.com/list
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Server</strong>: Tengine
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: text/html;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 25 Jun 2019 12:28:55 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Accept-Encoding
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Language</strong>: en-US
+                            </div>
+                            
+                            <div>
+                              <strong>server-timing</strong>: inner; dur=20
+                            </div>
+                            
+                            <div>
+                              <strong>X-TT-TIMESTAMP</strong>: 1561465735.622
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                            <div>
+                              <strong>Via</strong>: cache13.l2nu16-1[22,0], cache5.cn464[58,0]
+                            </div>
+                            
+                            <div>
+                              <strong>Timing-Allow-Origin</strong>: *
+                            </div>
+                            
+                            <div>
+                              <strong>EagleId</strong>: 9dff8bcd15614657355835729e
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            text/html;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>text</th>
+                        <td>
+                          
+                              <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;zh-CN&#34;&gt;
+&lt;head&gt;
+&lt;title&gt;我的文档 - 幕布&lt;/title&gt;
+&lt;meta charset=&#34;utf-8&#34;&gt;
+&lt;meta name=&#34;renderer&#34; content=&#34;webkit&#34;/&gt;
+&lt;meta name=&#34;viewport&#34;
+content=&#34;width=device-width, viewport-fit=cover, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0&#34;&gt;
+&lt;link rel=&#34;shortcut icon&#34; href=&#34;/favicon.ico&#34;&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;/asset/dep/icomoon/style-ba43dd96a4.css&#34;/&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+@font-face {
+font-family: &#34;SourceSansPro&#34;;
+src: url(&#34;/asset/dep/font/SourceSansPro-Regular.t ... OMITTED 14561 CHARACTORS ...</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>17357</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>79.81</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>76.141</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+        
+        <a class="button" href="#popup_log_1_1_5">log-5</a>
+        <div id="popup_log_1_1_5" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_1_5">&times;</a>
+
+            <div class="content">
+              <h3>Name: /api/list/tip_new_update</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://mubu.com/api/list/tip_new_update
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>user-agent</strong>: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>x-requested-with</strong>: XMLHttpRequest
+                          </div>
+                          
+                          <div>
+                            <strong>Cookie</strong>: SESSION=ZmIxYzM2Y2UtYjQ3My00YTk0LWIxYjctZGVjMTQ3M2ZmODJj; data_unique_id=94019d87-d704-44ee-8575-7ce960d7b7a4; user_persistence=2f056535-282d-4eb3-bfc1-4c00e9d6a8d8
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 0
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://mubu.com/api/list/tip_new_update
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Server</strong>: Tengine
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 25 Jun 2019 12:28:55 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Accept-Encoding
+                            </div>
+                            
+                            <div>
+                              <strong>server-timing</strong>: inner; dur=36
+                            </div>
+                            
+                            <div>
+                              <strong>X-TT-TIMESTAMP</strong>: 1561465735.729
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                            <div>
+                              <strong>Via</strong>: cache23.l2nu16-1[45,0], cache5.cn464[87,0]
+                            </div>
+                            
+                            <div>
+                              <strong>Timing-Allow-Origin</strong>: *
+                            </div>
+                            
+                            <div>
+                              <strong>EagleId</strong>: 9dff8bcd15614657356645946e
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;code&#39;: 0, &#39;msg&#39;: None, &#39;data&#39;: {}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.code
+                      </td>
+                      <td>equals</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.msg
+                      </td>
+                      <td>equals</td>
+                      <td>None</td>
+                      <td>None</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>31</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>107.84</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>103.353</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+        
+        <a class="button" href="#popup_log_1_1_6">log-6</a>
+        <div id="popup_log_1_1_6" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_1_6">&times;</a>
+
+            <div class="content">
+              <h3>Name: /api/list/get</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://mubu.com/api/list/get
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>user-agent</strong>: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>content-type</strong>: application/x-www-form-urlencoded; charset=UTF-8
+                          </div>
+                          
+                          <div>
+                            <strong>x-requested-with</strong>: XMLHttpRequest
+                          </div>
+                          
+                          <div>
+                            <strong>Cookie</strong>: SESSION=ZmIxYzM2Y2UtYjQ3My00YTk0LWIxYjctZGVjMTQ3M2ZmODJj; data_unique_id=94019d87-d704-44ee-8575-7ce960d7b7a4; user_persistence=2f056535-282d-4eb3-bfc1-4c00e9d6a8d8
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 38
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          folderId=0&keywords=&sort=name&source=
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://mubu.com/api/list/get
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Server</strong>: Tengine
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 25 Jun 2019 12:28:55 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Accept-Encoding
+                            </div>
+                            
+                            <div>
+                              <strong>server-timing</strong>: inner; dur=40
+                            </div>
+                            
+                            <div>
+                              <strong>X-TT-TIMESTAMP</strong>: 1561465735.834
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                            <div>
+                              <strong>Via</strong>: cache13.l2nu16-1[44,0], cache5.cn464[81,0]
+                            </div>
+                            
+                            <div>
+                              <strong>Timing-Allow-Origin</strong>: *
+                            </div>
+                            
+                            <div>
+                              <strong>EagleId</strong>: 9dff8bcd15614657357726182e
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;code&#39;: 0, &#39;msg&#39;: None, &#39;data&#39;: {&#39;folders&#39;: [{&#39;id&#39;: &#39;egxuZ9b7Zc&#39;, &#39;folderId&#39;: &#39;0&#39;, &#39;name&#39;: &#39;个人文档&#39;, &#39;userId&#39;: 1449164, &#39;createTime&#39;: 1561387695400, &#39;updateTime&#39;: 1561387695400, &#39;deleted&#39;: 0, &#39;deleteTime&#39;: 0, &#39;version&#39;: 1561387695400, &#39;commitClient&#39;: &#39;web&#39;, &#39;encrypted&#39;: 0, &#39;stared&#39;: 0, &#39;starIndex&#39;: 0, &#39;metaVersion&#39;: 1561387695400}, {&#39;id&#39;: &#39;gWIqGnTJdc&#39;, &#39;folderId&#39;: &#39;0&#39;, &#39;name&#39;: &#39;分享 &amp; 培训&#39;, &#39;userId&#39;: 1449164, &#39;createTime&#39;: 1546867640025, &#39;updateTime&#39;: 1546867640025, &#39;deleted&#39;: 0, &#39;deleteTime&#39;: 0, &#39;version&#39;: 1546867640025, &#39;commitClient&#39;: &#39;web&#39;, &#39;encrypted&#39;: 0, &#39;stared&#39;: 0, &#39;starIndex&#39;: 0, &#39;metaVersion&#39;: 1546867640025}, {&#39;id&#39;: &#39;moCWlkEqzc&#39;, &#39;folderId&#39;: &#39;0&#39;, &#39;name&#39;: &#39;学习笔记&#39;, &#39;userId&#39;: 1449164, &#39;createTime&#39;: 1547097150521, &#39;updateTime&#39;: 1547097150521, &#39;deleted&#39;: 0, &#39;deleteTime&#39;: 0, &#39;version&#39;: 1547097150521, &#39;commitClient&#39;: &#39;web&#39;, &#39;encrypted&#39;: 0, &#39;stared&#39;: 0, &#39;starIndex&#39;: 0, &#39;metaVersion&#39;: 1547097150521}, {&#39;id&#39;: &#39;wBf0e0AX7c&#39;, &#39;folderId&#39;: &#39;0&#39;, &#39;name&#39;: &#39;工作总结&#39;, &#39;userId&#39;: 1449164, &#39;createTime&#39;: 1544500188210, &#39;updateTime&#39;: 1544500188210, &#39;deleted&#39;: 0, &#39;deleteTime&#39;: 0, &#39;version&#39;: 1544500188210, &#39;commitClient&#39;: &#39;web&#39;, &#39;encrypted&#39;: 0, &#39;stared&#39;: 0, &#39;starIndex&#39;: 0, &#39;metaVersion&#39;: 1544500188210}, {&#39;id&#39;: &#39;eH80NTJDtc&#39;, &#39;folderId&#39;: &#39;0&#39;, &#39;name&#39;: &#39;极客时间&#39;, &#39;userId&#39;: 1449164, &#39;createTime&#39;: 1546568596431, &#39;updateTime&#39;: 1546568596431, &#39;deleted&#39;: 0, &#39;deleteTime&#39;: 0, &#39;version&#39;: 1546568596431, &#39;commitClient&#39;: &#39;web&#39;, &#39;encrypted&#39;: 0, &#39;stared&#39;: 0, &#39;starIndex&#39;: 0, &#39;metaVersion&#39;: 1546568596431}, {&#39;id&#39;: &#39;zbTKdVpSy0&#39;, &#39;folderId&#39;: &#39;0&#39;, &#39;name&#39;: &#39;灵感记录&#39;, &#39;userId&#39;: 1449164, &#39;createTime&#39;: 1549264733745, &#39;updateTime&#39;: 1549264733745, &#39;deleted&#39;: 0, &#39;deleteTime&#39;: 0, &#39;version&#39;: 1549264734377, &#39;commitClient&#39;: &#39;NewSyncApp&#39;, &#39;encrypted&#39;: 0, &#39;stared&#39;: 0, &#39;starIndex&#39;: 0, &#39;metaVersion&#39;: 1549264734377}], &#39;documents&#39;: [{&#39;encrypted&#39;: 0, &#39;name&#39;: &#39;demo&#39;, &#39;updateTime&#39;: 1561465281123, &#39;shareId&#39;: None, &#39;id&#39;: &#39;gUzPBCpNDc&#39;, &#39;stared&#39;: 0, &#39;userName&#39;: &#39;debugtalk&#39;}, {&#39;encrypted&#39;: 0, &#39;name&#39;: &#39;demo-123&#39;, &#39;updateTime&#39;: 1561465277728, &#39;shareId&#39;: None, &#39;id&#39;: &#39;9SqraR7vFc&#39;, &#39;stared&#39;: 0, &#39;userName&#39;: &#39;debugtalk&#39;}, {&#39;encrypted&#39;: 0, &#39;name&#39;: &#39;无标题&#39;, &#39;updateTime&#39;: 1561465278519, &#39;shareId&#39;: None, &#39;id&#39;: &#39;fNwli5I-Pc&#39;, &#39;stared&#39;: 0, &#39;userName&#39;: &#39;debugtalk&#39;}], &#39;dir&#39;: [], &#39;folderId&#39;: &#39;0&#39;}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.code
+                      </td>
+                      <td>equals</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.msg
+                      </td>
+                      <td>equals</td>
+                      <td>None</td>
+                      <td>None</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>2073</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>103.93</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>99.815</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+        
+        <a class="button" href="#popup_log_1_1_7">log-7</a>
+        <div id="popup_log_1_1_7" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_1_7">&times;</a>
+
+            <div class="content">
+              <h3>Name: /api/message/get_message_unread</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://mubu.com/api/message/get_message_unread
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>user-agent</strong>: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>x-requested-with</strong>: XMLHttpRequest
+                          </div>
+                          
+                          <div>
+                            <strong>Cookie</strong>: SESSION=ZmIxYzM2Y2UtYjQ3My00YTk0LWIxYjctZGVjMTQ3M2ZmODJj; data_unique_id=94019d87-d704-44ee-8575-7ce960d7b7a4; user_persistence=2f056535-282d-4eb3-bfc1-4c00e9d6a8d8
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 0
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://mubu.com/api/message/get_message_unread
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Server</strong>: Tengine
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 25 Jun 2019 12:28:55 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Accept-Encoding
+                            </div>
+                            
+                            <div>
+                              <strong>server-timing</strong>: inner; dur=36
+                            </div>
+                            
+                            <div>
+                              <strong>X-TT-TIMESTAMP</strong>: 1561465735.940
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                            <div>
+                              <strong>Via</strong>: cache23.l2nu16-1[42,0], cache5.cn464[83,0]
+                            </div>
+                            
+                            <div>
+                              <strong>Timing-Allow-Origin</strong>: *
+                            </div>
+                            
+                            <div>
+                              <strong>EagleId</strong>: 9dff8bcd15614657358786434e
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;code&#39;: 0, &#39;msg&#39;: None, &#39;data&#39;: {&#39;unreadCount&#39;: 0}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.code
+                      </td>
+                      <td>equals</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.msg
+                      </td>
+                      <td>equals</td>
+                      <td>None</td>
+                      <td>None</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>46</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>104.25</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>98.939</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_2">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">/doc9SqraR7vFc</td>
+      <td style="text-align:center;width:6em;">92.71 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_2_1">log-1</a>
+        <div id="popup_log_1_2_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_2_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /doc9SqraR7vFc</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://mubu.com/doc9SqraR7vFc
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>user-agent</strong>: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>Cookie</strong>: SESSION=ZmIxYzM2Y2UtYjQ3My00YTk0LWIxYjctZGVjMTQ3M2ZmODJj; data_unique_id=94019d87-d704-44ee-8575-7ce960d7b7a4; user_persistence=2f056535-282d-4eb3-bfc1-4c00e9d6a8d8
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://mubu.com/doc9SqraR7vFc
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Server</strong>: Tengine
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: text/html;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 25 Jun 2019 12:28:56 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Accept-Encoding
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Language</strong>: en-US
+                            </div>
+                            
+                            <div>
+                              <strong>server-timing</strong>: inner; dur=20
+                            </div>
+                            
+                            <div>
+                              <strong>X-TT-TIMESTAMP</strong>: 1561465736.030
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                            <div>
+                              <strong>Via</strong>: cache13.l2nu16-1[26,0], cache5.cn464[62,0]
+                            </div>
+                            
+                            <div>
+                              <strong>Timing-Allow-Origin</strong>: *
+                            </div>
+                            
+                            <div>
+                              <strong>EagleId</strong>: 9dff8bcd15614657359866671e
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            text/html;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>text</th>
+                        <td>
+                          
+                              <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;zh-CN&#34;&gt;
+&lt;head&gt;
+&lt;title&gt;demo-123 - 幕布&lt;/title&gt;
+&lt;meta charset=&#34;utf-8&#34;&gt;
+&lt;meta name=&#34;renderer&#34; content=&#34;webkit&#34;/&gt;
+&lt;meta name=&#34;viewport&#34;
+content=&#34;width=device-width, viewport-fit=cover, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0&#34;&gt;
+&lt;link rel=&#34;shortcut icon&#34; href=&#34;/favicon.ico&#34;&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;/asset/dep/icomoon/style-ba43dd96a4.css&#34;/&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+@font-face {
+font-family: &#34;SourceSansPro&#34;;
+src: url(&#34;/asset/dep/font/SourceSansPro-Regul ... OMITTED 11851 CHARACTORS ...</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>14129</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>92.71</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>80.786</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_3">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">/api/document/get</td>
+      <td style="text-align:center;width:6em;">108.20 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_3_1">log-1</a>
+        <div id="popup_log_1_3_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_3_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /api/document/get</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://mubu.com/api/document/get
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>user-agent</strong>: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>content-type</strong>: application/x-www-form-urlencoded; charset=UTF-8
+                          </div>
+                          
+                          <div>
+                            <strong>x-requested-with</strong>: XMLHttpRequest
+                          </div>
+                          
+                          <div>
+                            <strong>Cookie</strong>: SESSION=ZmIxYzM2Y2UtYjQ3My00YTk0LWIxYjctZGVjMTQ3M2ZmODJj; data_unique_id=94019d87-d704-44ee-8575-7ce960d7b7a4; user_persistence=2f056535-282d-4eb3-bfc1-4c00e9d6a8d8
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 16
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          docId=9SqraR7vFc
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://mubu.com/api/document/get
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Server</strong>: Tengine
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 25 Jun 2019 12:28:56 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Accept-Encoding
+                            </div>
+                            
+                            <div>
+                              <strong>server-timing</strong>: inner; dur=40
+                            </div>
+                            
+                            <div>
+                              <strong>X-TT-TIMESTAMP</strong>: 1561465736.142
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                            <div>
+                              <strong>Via</strong>: cache23.l2nu16-1[44,0], cache5.cn464[86,0]
+                            </div>
+                            
+                            <div>
+                              <strong>Timing-Allow-Origin</strong>: *
+                            </div>
+                            
+                            <div>
+                              <strong>EagleId</strong>: 9dff8bcd15614657360786899e
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;code&#39;: 0, &#39;msg&#39;: &#39;Success&#39;, &#39;data&#39;: {&#39;role&#39;: 31, &#39;baseVersion&#39;: 24, &#39;name&#39;: &#39;demo-123&#39;, &#39;definition&#39;: &#39;{&#34;nodes&#34;:[{&#34;id&#34;:&#34;a216b8dc5fb7c051&#34;,&#34;modified&#34;:1561451692621,&#34;text&#34;:&#34;&#34;}]}&#39;}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.code
+                      </td>
+                      <td>equals</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.msg
+                      </td>
+                      <td>equals</td>
+                      <td>Success</td>
+                      <td>Success</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>180</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>108.2</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>103.758</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_4">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">/api/user/current_level</td>
+      <td style="text-align:center;width:6em;">71.04 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_4_1">log-1</a>
+        <div id="popup_log_1_4_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_4_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /api/user/current_level</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://mubu.com/api/user/current_level?document_id=9SqraR7vFc
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>user-agent</strong>: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>x-requested-with</strong>: XMLHttpRequest
+                          </div>
+                          
+                          <div>
+                            <strong>Cookie</strong>: SESSION=ZmIxYzM2Y2UtYjQ3My00YTk0LWIxYjctZGVjMTQ3M2ZmODJj; data_unique_id=94019d87-d704-44ee-8575-7ce960d7b7a4; user_persistence=2f056535-282d-4eb3-bfc1-4c00e9d6a8d8
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 0
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://mubu.com/api/user/current_level?document_id=9SqraR7vFc
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Server</strong>: Tengine
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 25 Jun 2019 12:28:56 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Accept-Encoding
+                            </div>
+                            
+                            <div>
+                              <strong>server-timing</strong>: inner; dur=8
+                            </div>
+                            
+                            <div>
+                              <strong>X-TT-TIMESTAMP</strong>: 1561465736.220
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                            <div>
+                              <strong>Via</strong>: cache13.l2nu16-1[14,0], cache5.cn464[51,0]
+                            </div>
+                            
+                            <div>
+                              <strong>Timing-Allow-Origin</strong>: *
+                            </div>
+                            
+                            <div>
+                              <strong>EagleId</strong>: 9dff8bcd15614657361887187e
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;code&#39;: 0, &#39;msg&#39;: &#39;Success&#39;, &#39;data&#39;: {&#39;level&#39;: 1, &#39;id&#39;: 1449164}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.code
+                      </td>
+                      <td>equals</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.msg
+                      </td>
+                      <td>equals</td>
+                      <td>Success</td>
+                      <td>Success</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>58</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>71.04</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>67.852</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_5">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">/api/ticket/register</td>
+      <td style="text-align:center;width:6em;">121.93 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_5_1">log-1</a>
+        <div id="popup_log_1_5_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_5_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /api/ticket/register</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://mubu.com/api/ticket/register
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>user-agent</strong>: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>x-requested-with</strong>: XMLHttpRequest
+                          </div>
+                          
+                          <div>
+                            <strong>Cookie</strong>: SESSION=ZmIxYzM2Y2UtYjQ3My00YTk0LWIxYjctZGVjMTQ3M2ZmODJj; data_unique_id=94019d87-d704-44ee-8575-7ce960d7b7a4; user_persistence=2f056535-282d-4eb3-bfc1-4c00e9d6a8d8
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://mubu.com/api/ticket/register
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Server</strong>: Tengine
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 25 Jun 2019 12:28:56 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Accept-Encoding
+                            </div>
+                            
+                            <div>
+                              <strong>server-timing</strong>: inner; dur=56
+                            </div>
+                            
+                            <div>
+                              <strong>X-TT-TIMESTAMP</strong>: 1561465736.340
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                            <div>
+                              <strong>Via</strong>: cache23.l2nu16-1[61,0], cache5.cn464[103,0]
+                            </div>
+                            
+                            <div>
+                              <strong>Timing-Allow-Origin</strong>: *
+                            </div>
+                            
+                            <div>
+                              <strong>EagleId</strong>: 9dff8bcd15614657362597350e
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;code&#39;: 0, &#39;msg&#39;: &#39;Success&#39;, &#39;data&#39;: {&#39;ticket&#39;: &#39;9553f0cf5628d10f445cf0e6fa21f739&#39;, &#39;TTL&#39;: 60}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.code
+                      </td>
+                      <td>equals</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.msg
+                      </td>
+                      <td>equals</td>
+                      <td>Success</td>
+                      <td>Success</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>88</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>121.93</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>118.529</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_6">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">/api/middleware/members</td>
+      <td style="text-align:center;width:6em;">184.87 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_6_1">log-1</a>
+        <div id="popup_log_1_6_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_6_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /api/middleware/members</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://mubu.com/api/middleware/members?documentId=9SqraR7vFc&memberId=383738
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>user-agent</strong>: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>request-id</strong>: members:383738:1561465736370
+                          </div>
+                          
+                          <div>
+                            <strong>x-requested-with</strong>: XMLHttpRequest
+                          </div>
+                          
+                          <div>
+                            <strong>Cookie</strong>: SESSION=ZmIxYzM2Y2UtYjQ3My00YTk0LWIxYjctZGVjMTQ3M2ZmODJj; data_unique_id=94019d87-d704-44ee-8575-7ce960d7b7a4; user_persistence=2f056535-282d-4eb3-bfc1-4c00e9d6a8d8
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://mubu.com/api/middleware/members?documentId=9SqraR7vFc&memberId=383738
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Server</strong>: Tengine
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 25 Jun 2019 12:28:56 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Accept-Encoding
+                            </div>
+                            
+                            <div>
+                              <strong>server-timing</strong>: inner; dur=120
+                            </div>
+                            
+                            <div>
+                              <strong>X-TT-TIMESTAMP</strong>: 1561465736.525
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                            <div>
+                              <strong>Via</strong>: cache13.l2nu16-1[124,0], cache5.cn464[161,0]
+                            </div>
+                            
+                            <div>
+                              <strong>Timing-Allow-Origin</strong>: *
+                            </div>
+                            
+                            <div>
+                              <strong>EagleId</strong>: 9dff8bcd15614657363837714e
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;code&#39;: 0, &#39;msg&#39;: &#39;success&#39;, &#39;data&#39;: {&#39;roomVersion&#39;: 5, &#39;events&#39;: [{&#39;documentId&#39;: &#39;9SqraR7vFc&#39;, &#39;type&#39;: &#39;ENTER&#39;, &#39;userId&#39;: 1449164, &#39;info&#39;: {&#39;gender&#39;: &#39;男&#39;, &#39;city&#39;: &#39;Shenzhen&#39;, &#39;level&#39;: 1, &#39;year&#39;: None, &#39;photo&#39;: &#39;photo/f46a9b70-5b7f-4942-88f1-5437314377a7.jpg&#39;, &#39;remark&#39;: None, &#39;wxId&#39;: &#39;oahEws1zrzEbevPPDz2ys10vcsqo&#39;, &#39;qqId&#39;: None, &#39;province&#39;: &#39;Guangdong&#39;, &#39;createTime&#39;: 1535532827178, &#39;phone&#39;: &#39;18613143458&#39;, &#39;name&#39;: &#39;debugtalk&#39;, &#39;id&#39;: 1449164, &#39;qqName&#39;: None, &#39;wxName&#39;: &#39;debugtalk&#39;, &#39;larkId&#39;: None, &#39;vipEndDate&#39;: &#39;20251127&#39;}, &#39;memberId&#39;: &#39;372732&#39;}]}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.code
+                      </td>
+                      <td>equals</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.msg
+                      </td>
+                      <td>equals</td>
+                      <td>success</td>
+                      <td>success</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>504</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>184.87</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>178.171</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_7">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">/api/middleware/message</td>
+      <td style="text-align:center;width:6em;">210.60 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_7_1">log-1</a>
+        <div id="popup_log_1_7_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_7_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /api/middleware/message</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://mubu.com/api/middleware/message
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>user-agent</strong>: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>content-type</strong>: application/json; charset=UTF-8
+                          </div>
+                          
+                          <div>
+                            <strong>member-id</strong>: 383738
+                          </div>
+                          
+                          <div>
+                            <strong>request-id</strong>: MESSAGE:1449164:383738:8
+                          </div>
+                          
+                          <div>
+                            <strong>x-requested-with</strong>: XMLHttpRequest
+                          </div>
+                          
+                          <div>
+                            <strong>Cookie</strong>: SESSION=ZmIxYzM2Y2UtYjQ3My00YTk0LWIxYjctZGVjMTQ3M2ZmODJj; data_unique_id=94019d87-d704-44ee-8575-7ce960d7b7a4; user_persistence=2f056535-282d-4eb3-bfc1-4c00e9d6a8d8
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 358
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          {&#34;context&#34;: {&#34;appVersion&#34;: &#34;0&#34;, &#34;os&#34;: &#34;macOS&#34;, &#34;osVersion&#34;: &#34;10.14.1&#34;, &#34;platform&#34;: &#34;web&#34;}, &#34;data&#34;: {&#34;message&#34;: {&#34;content&#34;: [{&#34;name&#34;: &#34;nameChanged&#34;, &#34;title&#34;: &#34;demo-123&#34;}], &#34;documentId&#34;: &#34;9SqraR7vFc&#34;, &#34;type&#34;: &#34;CHANGE&#34;, &#34;version&#34;: 3}}, &#34;engineType&#34;: &#34;MUBU&#34;, &#34;messageType&#34;: &#34;BROADCAST&#34;, &#34;reqId&#34;: 8, &#34;requestId&#34;: &#34;MESSAGE:1449164:383738:8&#34;, &#34;token&#34;: &#34;9SqraR7vFc&#34;}
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://mubu.com/api/middleware/message
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Server</strong>: Tengine
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Tue, 25 Jun 2019 12:28:56 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Accept-Encoding
+                            </div>
+                            
+                            <div>
+                              <strong>server-timing</strong>: inner; dur=144
+                            </div>
+                            
+                            <div>
+                              <strong>X-TT-TIMESTAMP</strong>: 1561465736.741
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                            <div>
+                              <strong>Via</strong>: cache13.l2nu16-1[152,0], cache5.cn464[190,0]
+                            </div>
+                            
+                            <div>
+                              <strong>Timing-Allow-Origin</strong>: *
+                            </div>
+                            
+                            <div>
+                              <strong>EagleId</strong>: 9dff8bcd15614657365698248e
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;code&#39;: 0, &#39;msg&#39;: &#39;success&#39;, &#39;data&#39;: {&#39;code&#39;: 0, &#39;messageType&#39;: &#39;BROADCAST&#39;, &#39;data&#39;: {&#39;ack&#39;: {&#39;applyVersion&#39;: 24, &#39;code&#39;: 0, &#39;latestVersion&#39;: 25, &#39;documentId&#39;: &#39;9SqraR7vFc&#39;, &#39;message&#39;: &#39;Success&#39;, &#39;type&#39;: &#39;CHANGE&#39;, &#39;userId&#39;: 1449164, &#39;memberId&#39;: &#39;383738&#39;}}, &#39;requestId&#39;: &#39;MESSAGE:1449164:383738:8&#39;, &#39;context&#39;: {&#39;appVersion&#39;: &#39;0&#39;, &#39;os&#39;: &#39;macOS&#39;, &#39;osVersion&#39;: &#39;10.14.1&#39;, &#39;platform&#39;: &#39;web&#39;}, &#39;engineType&#39;: &#39;MUBU&#39;, &#39;message&#39;: &#39;Success&#39;, &#39;reqId&#39;: 8, &#39;token&#39;: &#39;9SqraR7vFc&#39;}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.code
+                      </td>
+                      <td>equals</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.msg
+                      </td>
+                      <td>equals</td>
+                      <td>success</td>
+                      <td>success</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>423</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>210.6</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>207.619</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+</body>
