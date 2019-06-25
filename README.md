@@ -5,7 +5,7 @@
 ```bash
 $ hrun api/get_message_unread.yml
 ```
-生成测试报告：[测试报告](demo-output/report-api.html)
+生成测试报告：[测试报告](http://sf1-ttcdn-tos.pstatp.com/obj/ttfe/httprunner/report-api.html)
 
 <details>
 <summary>点击查看运行日志</summary>
@@ -35,7 +35,7 @@ INFO     Generated Html report: /Users/debugtalk/Documents/MTSC2019/mubu-demo/re
 $ hrun testcases/change_title.yml
 ```
 
-生成测试报告：[测试报告](demo-output/report-testcase.html)
+生成测试报告：[测试报告](https://sf1-ttcdn-tos.pstatp.com/obj/ttfe/httprunner/report-testcase.html)
 
 <details>
 <summary>点击查看运行日志</summary>
@@ -113,7 +113,7 @@ INFO     Generated Html report: /Users/debugtalk/Documents/MTSC2019/mubu-demo/re
 $ hrun testsuite/overall.yml
 ```
 
-生成测试报告：[测试报告](demo-output/report-testsuite.html)
+生成测试报告：[测试报告](https://sf1-ttcdn-tos.pstatp.com/obj/ttfe/httprunner/report-testsuite.html)
 
 <details>
 <summary>点击查看运行日志</summary>
