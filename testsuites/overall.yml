@@ -1,0 +1,21 @@
+
+config:
+    name: "combine multiple testcases to a testsuite"
+    base_url: https://mubu.com/
+
+testcases:
+-
+    name: change doc title
+    testcase: testcases/change_title.yml
+
+-
+    name: create new doc
+    testcase: testcases/create_doc.yml
+
+-
+    name: login mubu
+    testcase: testcases/login.yml
+
+-
+    name: overall smoke test
+    testcase: testcases/login-create-changetitle.yml
