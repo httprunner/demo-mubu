@@ -1,0 +1,29 @@
+config:
+    name: create document
+teststeps:
+-   name: login mubu
+    testcase: testcases/login.yml
+-   name: /api/list/create_doc
+    request:
+        data:
+            folderId: '0'
+            type: '0'
+        headers:
+            content-type: application/x-www-form-urlencoded; charset=UTF-8
+            user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+            x-requested-with: XMLHttpRequest
+        method: POST
+        url: https://mubu.com/api/list/create_doc
+    extract:
+        documentId: json.data.id
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - content.code
+        - 0
+    -   eq:
+        - content.msg
+        - null

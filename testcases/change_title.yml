@@ -1,0 +1,146 @@
+config:
+    name: create document
+    variables:
+        documentId: 9SqraR7vFc
+        doc_title: demo-123
+    verify: False
+teststeps:
+-   name: login mubu
+    testcase: testcases/login.yml
+-   name: /doc${documentId}
+    request:
+        headers:
+            user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+        method: GET
+        url: https://mubu.com/doc${documentId}
+    extract:
+        memberId: "memberId: '(.*)'"
+    validate:
+    -   eq:
+        - status_code
+        - 200
+-   name: /api/document/get
+    request:
+        data:
+            docId: ${documentId}
+        headers:
+            content-type: application/x-www-form-urlencoded; charset=UTF-8
+            user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+            x-requested-with: XMLHttpRequest
+        method: POST
+        url: https://mubu.com/api/document/get
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - content.code
+        - 0
+    -   eq:
+        - content.msg
+        - Success
+-   name: /api/user/current_level
+    request:
+        data: ''
+        headers:
+            user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+            x-requested-with: XMLHttpRequest
+        method: POST
+        params:
+            document_id: ${documentId}
+        url: https://mubu.com/api/user/current_level
+    extract:
+        userId: json.data.id
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - content.code
+        - 0
+    -   eq:
+        - content.msg
+        - Success
+-   name: /api/ticket/register
+    request:
+        headers:
+            user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+            x-requested-with: XMLHttpRequest
+        method: GET
+        url: https://mubu.com/api/ticket/register
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - content.code
+        - 0
+    -   eq:
+        - content.msg
+        - Success
+-   name: /api/middleware/members
+    request:
+        headers:
+            request-id: members:${memberId}:${get_timestamp()}
+            user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+            x-requested-with: XMLHttpRequest
+        method: GET
+        params:
+            documentId: ${documentId}
+            memberId: '${memberId}'
+        url: https://mubu.com/api/middleware/members
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - content.code
+        - 0
+    -   eq:
+        - content.msg
+        - success
+-   name: /api/middleware/message
+    request:
+        headers:
+            content-type: application/json; charset=UTF-8
+            member-id: '${memberId}'
+            request-id: MESSAGE:${userId}:${memberId}:8
+            user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+            x-requested-with: XMLHttpRequest
+        json:
+            context:
+                appVersion: '0'
+                os: macOS
+                osVersion: 10.14.1
+                platform: web
+            data:
+                message:
+                    content:
+                    -   name: nameChanged
+                        title: ${doc_title}
+                    documentId: ${documentId}
+                    type: CHANGE
+                    version: 3
+            engineType: MUBU
+            messageType: BROADCAST
+            reqId: 8
+            requestId: MESSAGE:${userId}:${memberId}:8
+            token: ${documentId}
+        method: POST
+        url: https://mubu.com/api/middleware/message
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - content.code
+        - 0
+    -   eq:
+        - content.msg
+        - success
