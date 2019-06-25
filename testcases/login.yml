@@ -28,22 +28,11 @@ teststeps:
         - status_code
         - 200
 -   name: /api/login/submit
-    request:
-        data:
-            password: $password
-            phone: $phone
-            remember: 'true'
-        headers:
-            content-type: application/x-www-form-urlencoded; charset=UTF-8
-            user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36
-                (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
-            x-requested-with: XMLHttpRequest
-        method: POST
-        url: https://mubu.com/api/login/submit
+    api: api/login_submit.yml
+    variables:
+        password: $password
+        phone: $phone
     validate:
-    -   eq:
-        - status_code
-        - 200
     -   eq:
         - content.code
         - 0
@@ -62,18 +51,8 @@ teststeps:
         - status_code
         - 200
 -   name: /api/list/tip_new_update
-    request:
-        data: ''
-        headers:
-            user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36
-                (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
-            x-requested-with: XMLHttpRequest
-        method: POST
-        url: https://mubu.com/api/list/tip_new_update
+    api: api/tip_new_update.yml
     validate:
-    -   eq:
-        - status_code
-        - 200
     -   eq:
         - content.code
         - 0
@@ -81,23 +60,8 @@ teststeps:
         - content.msg
         - null
 -   name: /api/list/get
-    request:
-        data:
-            folderId: '0'
-            keywords: ''
-            sort: name
-            source: ''
-        headers:
-            content-type: application/x-www-form-urlencoded; charset=UTF-8
-            user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36
-                (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
-            x-requested-with: XMLHttpRequest
-        method: POST
-        url: https://mubu.com/api/list/get
+    api: api/list_get.yml
     validate:
-    -   eq:
-        - status_code
-        - 200
     -   eq:
         - content.code
         - 0
@@ -105,18 +69,8 @@ teststeps:
         - content.msg
         - null
 -   name: /api/message/get_message_unread
-    request:
-        data: ''
-        headers:
-            user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36
-                (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
-            x-requested-with: XMLHttpRequest
-        method: POST
-        url: https://mubu.com/api/message/get_message_unread
+    api: api/get_message_unread.yml
     validate:
-    -   eq:
-        - status_code
-        - 200
     -   eq:
         - content.code
         - 0
