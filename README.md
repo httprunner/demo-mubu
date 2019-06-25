@@ -3,28 +3,28 @@
 ## 运行单个 API
 
 ```bash
-$ hrun api/get_message_unread.yml
+$ hrun api/login_submit.yml
 ```
-生成测试报告：[测试报告](http://sf1-ttcdn-tos.pstatp.com/obj/ttfe/httprunner/report-api.html)
+生成测试报告：[测试报告](http://sf1-ttcdn-tos.pstatp.com/obj/ttfe/httprunner/report-api-login.html)
 
 <details>
 <summary>点击查看运行日志</summary>
 
 ```
-INFO     Loading environment variables from /Users/debugtalk/Documents/MTSC2019/mubu-demo/.env
-INFO     Start to run testcase: /api/message/get_message_unread
-/api/message/get_message_unread
-INFO     POST https://mubu.com/api/message/get_message_unread
-INFO     status_code: 200, response_time(ms): 152.4 ms, response_length: 71 bytes
+INFO     Loading environment variables from /Users/debugtalk/mubu-demo/.env
+INFO     Start to run testcase: /api/login/submit
+/api/login/submit
+INFO     POST https://mubu.com/api/login/submit
+INFO     status_code: 200, response_time(ms): 206.3 ms, response_length: 45 bytes
 
 .
 
 ----------------------------------------------------------------------
-Ran 1 test in 0.154s
+Ran 1 test in 0.208s
 
 OK
 INFO     Start to render Html report ...
-INFO     Generated Html report: /Users/debugtalk/Documents/MTSC2019/mubu-demo/reports/1561465925.html
+INFO     Generated Html report: /Users/debugtalk/mubu-demo/reports/1561468036.html
 ```
 
 </details>
@@ -41,7 +41,7 @@ $ hrun testcases/change_title.yml
 <summary>点击查看运行日志</summary>
 
 ```
-INFO     Loading environment variables from /Users/debugtalk/Documents/MTSC2019/mubu-demo/.env
+INFO     Loading environment variables from /Users/debugtalk/mubu-demo/.env
 INFO     Start to run testcase: create document
 login mubu
 INFO     GET https://mubu.com/
@@ -102,7 +102,7 @@ Ran 7 tests in 2.075s
 
 OK
 INFO     Start to render Html report ...
-INFO     Generated Html report: /Users/debugtalk/Documents/MTSC2019/mubu-demo/reports/1561465734.html
+INFO     Generated Html report: /Users/debugtalk/mubu-demo/reports/1561465734.html
 ```
 
 </details>
@@ -119,7 +119,7 @@ $ hrun testsuite/overall.yml
 <summary>点击查看运行日志</summary>
 
 ```
-INFO     Loading environment variables from /Users/debugtalk/Documents/MTSC2019/mubu-demo/.env
+INFO     Loading environment variables from /Users/debugtalk/mubu-demo/.env
 INFO     Start to run testcase: change doc title
 login mubu
 INFO     GET https://mubu.com/
@@ -346,7 +346,7 @@ Ran 17 tests in 1.851s
 
 OK
 INFO     Start to render Html report ...
-INFO     Generated Html report: /Users/debugtalk/Documents/MTSC2019/mubu-demo/reports/1561465276.html
+INFO     Generated Html report: /Users/debugtalk/mubu-demo/reports/1561465276.html
 ```
 
 </details>

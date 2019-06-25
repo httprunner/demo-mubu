@@ -1,7 +1,7 @@
 name: /api/login/submit
 variables:
-    password: $password
-    phone: $phone
+    phone: ${ENV(phone)}
+    password: ${ENV(password)}
 request:
     data:
         password: $password
