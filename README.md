@@ -1,6 +1,46 @@
 # HttpRunner 使用示例
 
-## 运行单个 API
+## 案例场景
+
+本案例以[幕布](https://mubu.com)作为演示对象，覆盖测试场景：
+
+- 登录
+- 创建文档
+- 修改文档标题
+
+## 初始化工作
+
+要运行本仓库中的脚本代码，需要做如下两项准备工作。
+
+### 安装 HttpRunner
+
+```bash
+$ pip install httprunner
+```
+
+安装完成后，运行 `hrun -V` 命令，若能成功查看到版本号，则说明安装成功。
+
+```bash
+$ hrun -V
+2.2.1
+```
+
+如果遇到问题，可到 HttpRunner 项目主页查看[详细文档](https://cn.httprunner.org/Installation/)。
+
+### 准备幕布账号
+
+本仓库中没有包含幕布账号信息，需要自行准备。若还没有幕布账号，可前往[注册](https://mubu.com/reg)。
+
+在项目根目录中，创建 `.env` 文件，在里面填入幕布账号密码，格式如下：
+
+```
+phone=18613149999
+password=123456
+```
+
+## 运行脚本
+
+### 运行单个 API
 
 ```bash
 $ hrun api/login_submit.yml
@@ -29,7 +69,7 @@ INFO     Generated Html report: /Users/debugtalk/mubu-demo/reports/1561468036.ht
 
 </details>
 
-## 运行单个测试用例
+### 运行单个测试用例
 
 ```bash
 $ hrun testcases/change_title.yml
@@ -107,7 +147,7 @@ INFO     Generated Html report: /Users/debugtalk/mubu-demo/reports/1561465734.ht
 
 </details>
 
-## 运行 testsuite
+### 运行 testsuite
 
 ```bash
 $ hrun testsuite/overall.yml
