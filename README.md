@@ -150,7 +150,7 @@ INFO     Generated Html report: /Users/debugtalk/mubu-demo/reports/1561465734.ht
 ### 运行 testsuite
 
 ```bash
-$ hrun testsuite/overall.yml
+$ hrun testsuites/overall.yml
 ```
 
 生成测试报告：[测试报告](https://sf1-ttcdn-tos.pstatp.com/obj/ttfe/httprunner/report-testsuite.html)
